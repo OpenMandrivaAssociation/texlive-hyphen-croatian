@@ -1,3 +1,9 @@
+# revision 23085
+# category TLCore
+# catalog-ctan /language/hyphenation/hrhyph.tex
+# catalog-date 2011-06-08 00:02:48 +0200
+# catalog-license lppl1.3
+# catalog-version undef
 Name:		texlive-hyphen-croatian
 Version:	20110608
 Release:	1
@@ -46,6 +52,7 @@ Hyphenation patterns for Croatian in T1/EC and UTF-8 encodings.
 %_texmf_language_dat_d/hyphen-croatian
 %_texmf_language_def_d/hyphen-croatian
 %_texmf_language_lua_d/hyphen-croatian
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,6 +61,8 @@ Hyphenation patterns for Croatian in T1/EC and UTF-8 encodings.
 %build
 
 %install
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-croatian <<EOF
 %% from hyphen-croatian:
