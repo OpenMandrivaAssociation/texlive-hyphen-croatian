@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-croatian
 Version:	20110608
-Release:	2
+Release:	1
 Summary:	Croatian hyphenation patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/hrhyph.tex
@@ -44,14 +44,16 @@ Hyphenation patterns for Croatian in T1/EC and UTF-8 encodings.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-croatian <<EOF
-\%\% from hyphen-croatian:
+\%% from hyphen-croatian:
 croatian loadhyph-hr.tex
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_dat_d}/hyphen-croatian
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-croatian <<EOF
-\%\% from hyphen-croatian:
+\%% from hyphen-croatian:
 \addlanguage{croatian}{loadhyph-hr.tex}{}{2}{2}
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_def_d}/hyphen-croatian
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
 cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-croatian <<EOF
 -- from hyphen-croatian:
