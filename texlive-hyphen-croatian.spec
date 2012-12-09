@@ -66,3 +66,22 @@ cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-croatian <<EOF
 		hyphenation = '',
 	},
 EOF
+
+
+%changelog
+* Tue Jan 24 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110608-3
++ Revision: 767519
+- Add workaround to rpm bug that broke hyphenation files
+- Add workaround to rpm bug that broke hyphenation files
+
+* Wed Jan 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110608-2
++ Revision: 759903
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110608-1
++ Revision: 718644
+- texlive-hyphen-croatian
+- texlive-hyphen-croatian
+- texlive-hyphen-croatian
+- texlive-hyphen-croatian
+
