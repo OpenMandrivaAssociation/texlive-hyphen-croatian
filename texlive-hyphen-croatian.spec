@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-croatian
 Version:	20110608
-Release:	9
+Release:	10
 Summary:	Croatian hyphenation patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/hrhyph.tex
