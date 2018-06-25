@@ -5,7 +5,7 @@
 # catalog-license lppl1.3
 # catalog-version undef
 Name:		texlive-hyphen-croatian
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Croatian hyphenation patterns
 Group:		Publishing
