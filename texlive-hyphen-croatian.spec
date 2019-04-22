@@ -5,8 +5,8 @@
 # catalog-license lppl1.3
 # catalog-version undef
 Name:		texlive-hyphen-croatian
-Version:	20180303
-Release:	3
+Version:	20181105
+Release:	1
 Summary:	Croatian hyphenation patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/hrhyph.tex
