@@ -1,6 +1,6 @@
 Name:		texlive-hyphen-croatian
 Version:	58652
-Release:	1
+Release:	2
 Summary:	Croatian hyphenation patterns
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/hrhyph.tex
